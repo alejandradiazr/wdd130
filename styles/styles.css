@@ -1,5 +1,9 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: #6a0dad;
     padding: 10px;
 }
 
@@ -7,18 +11,21 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 h1 {
-    color: darkblue;
+    color: #6a0dad;
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid #b39ddb;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 20px rgba(106, 13, 173, 0.3);
+    border-radius: 8px;
 }
 
 p {
@@ -32,11 +39,12 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid #b39ddb;
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: #f3e8ff;
+    color: #4b0082;
     text-align: center;
+    border-radius: 8px;
 }
 
 aside img {
@@ -44,16 +52,10 @@ aside img {
     height: auto;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid #b39ddb;
     text-align: center;
+    color: #6a0dad;
+    font-weight: 500;
 }
