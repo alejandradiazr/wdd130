@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -9,7 +15,7 @@ nav {
 
 nav a {
     color: white;
-    display: block;
+    display: inline-block;
     padding: 20px;
     text-decoration: none;
     font-weight: 500;
@@ -17,6 +23,7 @@ nav a {
 
 h1 {
     color: #6a0dad;
+    margin: 1rem;
 }
 
 img {
@@ -26,14 +33,17 @@ img {
     padding: 2px;
     box-shadow: 0 0 20px rgba(106, 13, 173, 0.3);
     border-radius: 8px;
-}
-
-p {
-    padding: 0;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 main {
     max-width: 840px;
+    margin: 1rem;
+}
+
+p {
+    margin: 0.5rem 0;
 }
 
 aside {
@@ -43,13 +53,21 @@ aside {
     padding: 1rem;
     background-color: #f3e8ff;
     color: #4b0082;
-    text-align: center;
+    text-align: left;
     border-radius: 8px;
+    position: relative;
+}
+
+/* Ya NO vamos a posicionar el h2 encima de la imagen */
+aside h2 {
+    margin-bottom: 0.5rem;
+    position: static;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    margin-bottom: 0.5rem;
 }
 
 footer {
@@ -58,4 +76,17 @@ footer {
     text-align: center;
     color: #6a0dad;
     font-weight: 500;
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
