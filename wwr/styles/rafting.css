@@ -1,6 +1,5 @@
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #ffd417;
     --accent1-color: #7cb1ec;
     --accent2-color: #000000;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -25,7 +24,6 @@ body {
     background-color: var(--background);
 }
 
-/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -40,14 +38,12 @@ nav ul {
     gap: 20px;
 }
 
-/* FIX: better contrast for accessibility */
 nav a {
     text-decoration: none;
-    color: var(--accent2-color); /* black: passes WCAG AA */
+    color: var(--accent2-color);
     font-weight: bold;
 }
 
-/* HERO */
 .hero {
     position: relative;
     margin-top: 20px;
@@ -58,13 +54,12 @@ nav a {
     display: block;
 }
 
-/* FIX: stronger background for contrast */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     text-align: center;
-    background-color: rgba(10, 74, 158, 0.75); /* stronger blue */
+    background-color: rgba(10, 74, 158, 0.75);
     color: white;
     padding: 12px;
 }
@@ -80,9 +75,8 @@ nav a {
     color: #fff;
 }
 
-/* using the unused variable: accent1-color */
 .hero article {
-    border-left: 10px solid var(--accent1-color); /* now accent1 is used */
+    border-left: 10px solid var(--accent1-color);
 }
 
 .hero article img {
@@ -91,7 +85,6 @@ nav a {
     margin-left: 10px;
 }
 
-/* SECTIONS */
 section {
     margin-top: 32px;
 }
@@ -109,7 +102,6 @@ section p {
     line-height: 1.5;
 }
 
-/* FOOTER */
 footer {
     margin-top: 40px;
     padding-top: 20px;
