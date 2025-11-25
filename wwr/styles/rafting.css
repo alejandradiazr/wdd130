@@ -67,14 +67,16 @@ nav a {
     float: right;
 }
 
-.hero h1 { 
-    position: absolute; 
-    top: 20px; 
-    width: 100%; 
-    text-align: center; 
-    background-color: color-mix(in srgb, var(--accent1-color) 70%, transparent); 
-    color: white; 
-    padding: 12px; 
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: color-mix(in srgb, var(--accent1-color) 70%, transparent);
+    color: white;
+    padding: 12px;
+    margin: 0;
 }
 
 .hero-box {
