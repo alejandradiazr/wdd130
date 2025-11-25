@@ -19,10 +19,12 @@ header, main, footer {
     margin: 0 auto; 
 }
 
-body { 
-    font-family: var(--body-font); 
-    color: var(--accent2-color); 
+body {
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+    background: var(--background);
 }
+
 
 header {
     display: grid;
@@ -53,9 +55,16 @@ nav a {
     margin-top: 20px; 
 }
 
+.hero article {
+    position: absolute;
+}
+
 .hero img { 
     width: 100%; 
     display: block; 
+}
+.hero article img {
+    float: right;
 }
 
 .hero h1 { 
