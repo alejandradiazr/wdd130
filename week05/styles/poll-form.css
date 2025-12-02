@@ -1,0 +1,115 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 2rem 0;
+}
+
+/* Header */
+header {
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  color: #003366;
+}
+
+/* Form Style */
+form {
+  width: 650px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border: 1px solid rgb(0 0 0 / 0.15);
+  border-radius: 0.5rem;
+  background-color: white;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Grid container for items */
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+/* Layouts */
+.column2 {
+  grid-template-columns: 1fr 2fr;
+  margin: 0.3rem 0;
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.3rem 0;
+}
+
+/* Form Controls */
+label, input, select, textarea, button {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Label spacing */
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+/* Inputs, textareas */
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+/* Textarea full width */
+textarea {
+  width: 100%;
+}
+
+/* Button */
+button {
+  margin: 1rem 0;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0055a5;
+}
+
+/* Footer */
+footer {
+  margin: 1.5rem auto 0;
+  width: 650px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
