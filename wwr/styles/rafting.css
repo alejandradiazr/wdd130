@@ -76,7 +76,6 @@ nav a {
     background-color: color-mix(in srgb, var(--accent1-color) 70%, transparent);
     color: white;
     padding: 12px;
-    margin: 0;
 }
 
 .hero-box {
