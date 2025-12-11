@@ -210,7 +210,6 @@ footer {
     cursor: pointer;
 }
 
-/* EMPLOYEES */
 .employees {
     margin-top: 40px;
     text-align: center;
@@ -230,4 +229,177 @@ footer {
 .employee-grid figcaption {
     margin-top: 8px;
     font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 12px;
+    color: var(--primary-color);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero-cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    width: 840px;
+    margin: 32px auto 0;
+}
+
+.hero-cta .btn,
+a.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.newsletter-form input {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.home-grid {
+    width: 840px;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.home-grid article {
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.home-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.trip-list {
+    width: 840px;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+}
+
+.trip {
+    background: #fff;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.trip img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.trips-table {
+    width: 840px;
+    margin: 20px auto 48px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.trips-cta {
+    width: 840px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+    header, main, footer, .hero-cta, .home-grid, .trip-list, .trips-table {
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero img {
+        height: 260px;
+    }
+
+    .hero-cta {
+        grid-template-columns: 1fr;
+    }
+
+    .home-grid, .trip-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about-hero {
+    width: 100%;        
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+}
+
+.about-hero img {
+    height: auto;        
+}
+
+.about-hero .hero-box {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;        
+}
+
+.about-hero .hero-box img {
+    width: 100px;
+    float: right;
 }
