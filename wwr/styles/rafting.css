@@ -418,3 +418,19 @@ a.btn {
     height: 1px;
     overflow: hidden;
 }
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.contact-title {
+    text-align: center;
+    margin: 20px 0;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
